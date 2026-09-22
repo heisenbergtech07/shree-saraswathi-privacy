@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Data Deletion Requests — Shree Saraswathi Educational Group of Institution</title>
+<link rel="icon" href="logo.png" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f1e3d;
+    --navy-dark: #081026;
+    --gold: #c9a227;
+    --gold-dark: #9c7a1a;
+    --gold-pale: #faf3dc;
+    --text-primary: #101c33;
+    --text-secondary: #5b6472;
+    --border: #e7e4d9;
+    --background: #f6f5f1;
+    --font-brand: "Fraunces", Georgia, serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  header img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: #fff;
+    padding: 4px;
+    box-shadow: 0 8px 22px rgba(201, 162, 39, 0.3);
+  }
+
+  header h1 {
+    font-family: var(--font-brand);
+    color: #f0d998;
+    font-size: 22px;
+    font-weight: 650;
+    margin: 16px 0 4px;
+    letter-spacing: 0.01em;
+  }
+
+  header p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 22px 80px;
+  }
+
+  .updated {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(15, 30, 61, 0.04), 0 14px 32px rgba(15, 30, 61, 0.05);
+  }
+
+  h2 {
+    font-family: var(--font-brand);
+    font-size: 18px;
+    font-weight: 650;
+    color: var(--navy);
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold-pale);
+  }
+
+  h3 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 20px 0 8px;
+  }
+
+  p, li {
+    font-size: 14.5px;
+    color: var(--text-primary);
+  }
+
+  ul, ol {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: var(--gold-dark);
+    font-weight: 600;
+  }
+
+  .contact-box {
+    background: var(--gold-pale);
+    border: 1px solid #ecdca4;
+    border-radius: 12px;
+    padding: 18px 22px;
+  }
+
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .steps li {
+    position: relative;
+    padding-left: 38px;
+    margin-bottom: 14px;
+  }
+
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: #1c1508;
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 13.5px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 12px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Shree Saraswathi Educational Group of Institution" />
+  <h1>Shree Saraswathi Educational Group of Institution</h1>
+  <p>Data Deletion Requests</p>
+</header>
+
+<main>
+  <p class="updated">Last updated: September 23, 2026</p>
+
+  <div class="card">
+    <h2>Overview</h2>
+    <p>
+      This page explains how a student, parent, or staff member can request that their
+      personal data be deleted from the Shree Saraswathi Educational Group of Institution
+      app, and what happens to that data once a request is made. It supplements our full
+      <a href="privacy-policy.html">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How to Request Deletion</h2>
+    <ol class="steps">
+      <li>
+        Contact the Center using any of the details below and state that you are
+        requesting deletion of a student's (or your own staff) data.
+      </li>
+      <li>
+        Include the student's full name and Student ID (or the staff member's name and
+        email) so we can correctly identify the record to delete.
+      </li>
+      <li>
+        We will verify the request comes from the student's parent/guardian, the student
+        themself (if an adult), or the staff member concerned, before acting on it.
+      </li>
+      <li>
+        We will delete the applicable data as described below, normally within
+        <strong>30 days</strong> of a verified request, and confirm once it's done.
+      </li>
+    </ol>
+
+    <div class="contact-box">
+      <p style="margin:0 0 6px;"><strong>Shree Saraswathi Educational Group of Institution</strong></p>
+      <p style="margin:0;">
+        Email: shreesegi@gmail.com<br />
+        Phone: +91 99420 77442<br />
+        Address: 5, Odathurai Street, Thiruvaiyaru, Thanjavur, Tamil Nadu
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>What Gets Deleted, and What We May Keep</h2>
+    <p>
+      Most information is deleted in full. A small amount may be retained for a limited
+      time where we have a genuine administrative, legal, or accounting reason to do so —
+      never for marketing or any other purpose.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>What happens on request</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name, date of birth, gender, photo, Aadhaar number &amp; document, address, contact details</td>
+          <td>Deleted in full, within 30 days</td>
+        </tr>
+        <tr>
+          <td>Login credentials (Student ID / staff login)</td>
+          <td>Deactivated and deleted, within 30 days</td>
+        </tr>
+        <tr>
+          <td>Attendance, marks, homework, and learning records</td>
+          <td>Deleted in full, within 30 days</td>
+        </tr>
+        <tr>
+          <td>Fee &amp; payment transaction records</td>
+          <td>
+            May be retained for as long as required by applicable accounting/tax law in
+            India (typically several years), since these are financial records, not just
+            personal data. Retained records are restricted to admin access only and are
+            not used for any purpose beyond legal/accounting compliance.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Questions</h2>
+    <p>
+      If you have questions about a deletion request or this process, contact us using the
+      details above, or see our full <a href="privacy-policy.html">Privacy Policy</a>.
+    </p>
+  </div>
+</main>
+
+<footer>
+  © <span id="year"></span> Shree Saraswathi Educational Group of Institution
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
