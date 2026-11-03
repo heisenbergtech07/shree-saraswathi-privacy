@@ -155,7 +155,7 @@
 </header>
 
 <main>
-  <p class="updated">Last updated: September 22, 2026</p>
+  <p class="updated">Last updated: November 3, 2026</p>
 
   <div class="card">
     <h2>Overview</h2>
@@ -186,9 +186,11 @@
 
     <h3>Academic &amp; Attendance Records</h3>
     <ul>
-      <li>Daily attendance (present/absent)</li>
-      <li>Exam names, subjects, and marks obtained</li>
+      <li>Daily attendance (present, absent, or on leave when the family has informed the Center)</li>
+      <li>Exam names, subjects, and marks obtained, or that a student was absent for an exam</li>
       <li>Homework assignments and completion status</li>
+      <li>Photos of finished homework that a student chooses to upload, and the teacher's
+          check mark and short comment on that homework</li>
       <li>Study materials and links shared with a class</li>
     </ul>
 
@@ -210,6 +212,17 @@
         A log of notification messages (e.g. attendance updates, fee reminders) sent to
         parents, so staff can track what was communicated and when
       </li>
+      <li>Notices posted by the Center on the in-app notice board</li>
+    </ul>
+
+    <h3>Device Information for Notifications</h3>
+    <ul>
+      <li>
+        If you allow notifications, a notification token for your phone, linked to your
+        login, so the app can tell you about new homework, published marks, notices,
+        online classes, and fee due dates. We do not collect your location, contacts, or
+        any other device data.
+      </li>
     </ul>
   </div>
 
@@ -222,6 +235,9 @@
       <li>To let students/parents view attendance, results, fees, homework, and learning
           material through the student portal</li>
       <li>To schedule and join live online classes</li>
+      <li>To let students hand in photos of homework and receive teacher feedback</li>
+      <li>To send phone notifications about homework, marks, notices, classes, and fees
+          (you can turn these off at any time in your phone's settings)</li>
       <li>To operate and secure staff and student logins</li>
     </ul>
     <p>We do not use student or parent data for advertising, and we do not sell personal information to any third party.</p>
@@ -243,6 +259,8 @@
       <li>Student photos and Aadhaar documents are stored in a private file storage bucket,
           accessible only to signed-in staff via short-lived, expiring links — never a
           permanent public URL</li>
+      <li>Homework photos are stored privately: a student can see only their own, and staff
+          can see them to check the work. They are deleted automatically 30 days after upload</li>
       <li>Passwords are never stored in plain text; authentication is handled by Supabase's
           secure authentication system</li>
     </ul>
@@ -258,7 +276,8 @@
       <li><strong>WhatsApp</strong> — messages to parents are sent manually by staff via a
           standard WhatsApp link; this app does not use any automated bulk-messaging
           service, and message content is only what the staff member chooses to send</li>
-      <li><strong>Google Fonts</strong> — used to load the typefaces on this app's pages</li>
+      <li><strong>Google Firebase Cloud Messaging</strong> — delivers phone notifications.
+          It receives the notification token and the notification text only</li>
     </ul>
     <p>These providers may process data as necessary to provide their service to us; we do not permit them to use the data for their own independent purposes.</p>
   </div>
@@ -283,6 +302,11 @@
       purposes (e.g. re-admission, certificates, or fee history requests). Staff can deactivate
       or delete a student's record and associated login at any time through the app.
     </p>
+    <p>
+      Homework photos are kept for 30 days and then deleted automatically. A notice is removed
+      when staff delete it or after its end date. A phone's notification token is removed when
+      you sign out of the app.
+    </p>
   </div>
 
   <div class="card">
@@ -294,7 +318,8 @@
       <li>Request deletion of a student's record and login, subject to the Center's
           record-keeping obligations</li>
     </ul>
-    <p>See our <a href="data-deletion.html">Data Deletion Requests</a> page for the exact steps and what's deleted vs. retained.</p>
+    <p>See our <a href="data-deletion.html">Data Deletion Requests</a> page for the exact steps and what's deleted vs. retained,
+       and our <a href="terms.html">Terms and Conditions</a> for the rules of using the app.</p>
   </div>
 
   <div class="card">
